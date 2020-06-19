@@ -1,6 +1,6 @@
 .header {
   color: white;
-  background-color: #2D3945;
+  background-color: #3063A5;
   padding: 2px;
 }
 
@@ -97,7 +97,17 @@ select  {
 }
 
 input:focus {
-  background-color: #e0d0d0;
+
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus,
+#state:focus {
+    background-color: #e0d0d0;
+   transition: all .2s ease-in-out;
+      transform: scale(1.05);
 }
 
 input:invalid {
